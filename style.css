@@ -1,0 +1,258 @@
+body{
+    background: url(Images/girls-1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-position: center;
+    background-size: cover;
+}
+
+
+.hello{
+  position: absolute;
+  height: auto;
+  left: 100px;
+  width: 170px;
+}
+
+#menu{
+    width:100%;
+    height:40px;
+    background-color:#ffc0cb;
+    padding-top: 30px;
+    text-align: right;
+    justify-content:space-between;
+}
+
+#menu a{
+    color:#ffffff;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration:none;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+#menu a:hover{
+    color: #fa0580;
+}
+
+h2{
+    font-size: x-large;
+    font-weight: 800;
+    font-style: italic;
+    font-display:auto;
+    color: #fa0580;
+}
+
+.gallery img:hover{
+    box-shadow: 0 10px 30px rgba(172, 11, 118, 0.562);
+    transform: scale(0.9);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 0.8%; /* space between rows and columns */
+  padding-left: 20%;
+}
+
+.grid img {
+  width: 300px;
+  height:fit-content;
+  border-radius: 10px;
+}
+
+p{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    font-style:normal;
+    text-align: justify;
+    text-decoration:none;
+    font-size: larger;
+    padding-inline: 40px;
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: auto;
+  margin: auto;
+  gap: 30px;
+  padding: 40px;
+}
+
+.image-card {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-card img:hover {
+  transform: scale(0.95);
+  box-shadow: 0 10px 30px rgba(172, 11, 118, 0.562);
+}
+
+.caption {
+  font-family: 'Helvetica', sans-serif;
+  color: rgb(112, 1, 112);
+  font-weight: bold;
+  text-align: auto;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.caption1 {
+  font-family: 'Helvetica', sans-serif;
+  color: rgb(112, 1, 112);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.diary {
+  column-count: 4;
+  column-gap: 20px;
+  padding: 40px;
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+
+.diary-entry {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.diary-entry img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diary-entry img:hover {
+  transform: scale(0.95);
+  box-shadow: 0 10px 30px rgba(172, 11, 118, 0.562);
+}
+
+.polaroid-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  padding: 40px;
+}
+
+.polaroid {
+  background: white;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 10px rgba(131, 6, 104, 0.1);
+  width: 180px;
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.07);
+  box-shadow: 0 10px 25px rgba(172, 11, 118, 0.4);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.polaroid-label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: #a00077;
+  font-style: italic;
+}
+
+.photo-card {
+  background: white;
+  padding: 25px;
+  width: 300px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+.profile-pic {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s ease;
+}
+
+.insta { background-color: #fa7e9e; }
+.tiktok { background-color: #000000; }
+.fb { background-color: #3b5998; }
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+footer{
+    position: relative;
+    width:100%;
+    height:15%;
+    background-color:pink;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.footer-logo {
+    position: absolute;
+    height: auto;
+    width: 60px; /* adjust based on your logos */
+}
