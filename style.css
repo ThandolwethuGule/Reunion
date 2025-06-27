@@ -251,8 +251,3 @@ footer{
     justify-content: space-between;
 }
 
-.footer-logo {
-    position: absolute;
-    height: auto;
-    width: 60px; /* adjust based on your logos */
-}
